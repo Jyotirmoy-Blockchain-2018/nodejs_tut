@@ -30,6 +30,7 @@ module.exports = (app) => {
                         access_token = c.substring(name.length, c.length);
                     }
                 }
+                
                 var matches = access_token.match(/^s:(.+?)\./);
                 /* eventEmitter.emit('token_added');
                 res.json({
