@@ -2,6 +2,21 @@ var request = require('request');
 const JwtGenerator = require('../jwtgenerator');
 
 module.exports = (app) => {
+
+
+    app.get('/',function(req,res){
+        res.render('index');
+    });
+    app.post('/adduser', (req,res)=>{
+        var first_name = req.body.first_name;
+        var last_name = req.body.last_name;
+        var email_id = req.body.email_id;
+        res.render('adduser',{
+            first_name:first_name,
+            last_name:last_name,
+            email_id:email_id
+        });
+    });
     // Post Request to Get Token
     app.post('/nsftrackingauth', (req, res) => {
         try {

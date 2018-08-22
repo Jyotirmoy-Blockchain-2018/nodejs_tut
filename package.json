@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Testing composer Rest Server",
   "main": "app.js",
-  "private":true,
+  "private": true,
   "scripts": {
     "start": "nodemon app.js"
   },
@@ -11,9 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "express-validator": "^5.3.0",
     "njwt": "^0.4.0",
     "nodemon": "^1.18.3",
+    "npm": "^6.4.0",
     "request": "^2.88.0",
     "uuid": "^3.3.2"
   }

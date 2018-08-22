@@ -1,0 +1,15 @@
+<% include partials/header %>
+<h1>Add New User</h1>
+<p>
+    <form action="/adduser" method="POST">
+        <label>First Name</label><br/>
+            <input name="first_name" type="text" value=""/><br/>
+        <label>Last Name</label><br/>
+            <input name="last_name" type="text" value=""/><br/>
+        <label>Email Id</label><br/>
+        <input name="email_id" type="email" value=""/><br/>
+        <input type="submit" value="submit" />
+    </form>
+</p>
+<% include partials/footer %>
+    
